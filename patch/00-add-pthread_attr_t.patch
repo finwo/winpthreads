@@ -1,0 +1,12 @@
+diff --git a/src/winpthreads.h b/src/winpthreads.h
+index 8f0ac50..caeb2cd 100644
+--- a/src/winpthreads.h
++++ b/src/winpthreads.h
+@@ -10,6 +10,7 @@
+ 
+ #ifdef _WIN32
+ typedef CRITICAL_SECTION pthread_mutex_t;
++typedef void pthread_attr_t;
+ typedef void pthread_mutexattr_t;
+ typedef void pthread_condattr_t;
+ typedef void pthread_rwlockattr_t;
